@@ -1,0 +1,308 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+@colorBody:30px;
+@box:border-box;
+@sizePadding:20px;
+@sizeHndPadding:25px;
+@primaryBgColor:#337ab7;
+@primaryBorderColor:#2e6da4;
+@none:none;
+
+* {
+  box-sizing: @box;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: @colorBody;
+  background-color: #fff;
+  margin: 0;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+
+h1.title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+  font-size: 70px;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+.container-title {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 1%;
+}
+
+p.title {
+  margin-top: 0px;
+  display: block;
+  font-size: 24px;
+}
+
+.documentation {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h1.hnd-docs {
+  font-family: sans-serif;
+  font-size: 38px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+p.hnd-docs {
+  font-size: 1.4em !important;
+  margin-bottom: 1.8em;
+}
+
+figure {
+  background: lightgrey;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: @sizePadding;
+  padding-right: @sizePadding;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: @sizePadding;
+  padding-bottom: @sizePadding;
+}
+
+.hnd-example {
+  border: 1px solid;
+  margin-top: 0px;
+  padding-top: @sizeHndPadding;
+  padding-left: @sizeHndPadding;
+  padding-right: @sizeHndPadding;
+  padding-bottom: 30px;
+}
+
+.hnd-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: @none;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: @none;
+  -moz-user-select: @none;
+  -ms-user-select: @none;
+  user-select: @none;
+  background-image: @none;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  opacity: 0.3
+}
+
+.hnd-primary {
+  color: white;
+  background-color: @primaryBgColor;
+  border-color: ;
+}
+
+.hnd-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.hnd-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.hnd-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.hnd-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.hnd-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: @none;
+}
+
+.pagination a:hover {
+  color: #fff!important;
+  background-color: #f44336!important;
+}
+
+h2,
+h3,
+a {
+  color: #0A5856;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: @none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  font-size: .95em;
+  color: #3D7699;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: #0A5856;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+  text-align: center;
+}
+
+.banner {
+  color: #fff;
+  background: #3D7699;
+  padding: 3.2em 0;
+  margin-bottom: 60px;
+}
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.main-footer {
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px;
+}
+
+.hnd-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  color: #99979c;
+  text-align: center;
+  background-color: #2a2730;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  width: 190px;
+}
+
+.headline {
+  margin-bottom: 0;
+}
+
+/* =================================
+  Model Box
+==================================== */
+.container {
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* =================================
+  HnD Style
+==================================== */
+.hnd-docs-header {
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color: white;
+  opacity: 0.95;
+  background-repeat: repeat-x;
+}
+
+/* =================================
+  Media Queries
+==================================== */
